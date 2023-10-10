@@ -5,7 +5,7 @@
       <div class="layout-page">
         <Topbar/>
         <div class="content-wrapper">
-
+        <Main/>
         </div>
       </div>
     </div>
@@ -19,6 +19,7 @@ import { defineComponent } from 'vue';
 
 import Topbar from '@/components/Topbar.vue';
 import Menu from '@/components/Menu.vue';
+import Main from '@/components/Main.vue';
 
 export default defineComponent({
   name: 'Home',
@@ -26,6 +27,7 @@ export default defineComponent({
   components: {
     Topbar,
     Menu,
+    Main,
   },
 });
 </script>

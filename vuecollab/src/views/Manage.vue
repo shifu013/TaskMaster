@@ -5,7 +5,7 @@
       <div class="layout-page">
         <Topbar/>
         <div class="content-wrapper">
-
+        <Login/>
         </div>
       </div>
     </div>
@@ -19,13 +19,14 @@ import { defineComponent } from 'vue';
 
 import Topbar from '@/components/Topbar.vue';
 import Menu from '@/components/Menu.vue';
-
+import Login from '@/components/Login.vue';
 export default defineComponent({
   name: 'Manage',
 
   components: {
     Topbar,
     Menu,
+    Login,
   },
 });
 </script>
