@@ -1,17 +1,31 @@
 <template>
-    <User/>
-  </template>
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <Menu/>
+      <div class="layout-page">
+        <Topbar/>
+        <div class="content-wrapper">
+
+        </div>
+      </div>
+    </div>
+  </div>
+ 
   
-  <script>
-  // Components
-  import User from '../components/User.vue';
-  
-  export default ({
-    name: 'Manage',
-  
-    components: {
-      User,
-    },
-  });
-  </script>
-  
+</template>
+
+<script>
+import { defineComponent } from 'vue';
+
+import Topbar from '@/components/Topbar.vue';
+import Menu from '@/components/Menu.vue';
+
+export default defineComponent({
+  name: 'Manage',
+
+  components: {
+    Topbar,
+    Menu,
+  },
+});
+</script>

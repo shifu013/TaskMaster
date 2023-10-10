@@ -1,17 +1,31 @@
 <template>
-  <Admin/>
+  <div class="layout-wrapper layout-content-navbar">
+    <div class="layout-container">
+      <Menu/>
+      <div class="layout-page">
+        <Topbar/>
+        <div class="content-wrapper">
+
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+  
 </template>
 
 <script>
-// Components
-import Admin from '../components/Admin.vue';
+import { defineComponent } from 'vue';
 
+import Topbar from '@/components/Topbar.vue';
+import Menu from '@/components/Menu.vue';
 
-export default ({
+export default defineComponent({
   name: 'Home',
 
   components: {
-    Admin,
+    Topbar,
+    Menu,
   },
 });
 </script>
